@@ -1,0 +1,114 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Light Cyan: hsl(193, 38%, 86%)
+- Neon Green: hsl(150, 100%, 66%)
+
+### neutral
+
+- Grayish Blue: hsl(217, 19%, 38%)
+- Dark Grayish Blue: hsl(217, 19%, 24%)
+- Dark Blue: hsl(218, 23%, 16%)
+
+## Typography
+
+### Body Copy
+
+- Font size (quote): 28px
+
+### Font
+
+- Family: [Manrope](https://fonts.google.com/specimen/Manrope)
+- Weights: 800 */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+:root{
+    --primary-light-cyan: hsl(193, 38%, 86%);
+    --primary-neon-green: hsl(150, 100%, 66%);
+
+    --neutral-grayish-blue: hsl(217, 19%, 38%);
+    --neutral-dark-grayish-blue: hsl(217, 19%, 24%);
+    --neutral-dark-blue: hsl(218, 23%, 16%);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    font-family: 'Manrope', sans-serif;
+    font-size: 62.2%;
+    background-color: var(--neutral-dark-blue);
+    margin        : 0;
+    padding       : 0;
+    display       : grid;
+    place-content : center;
+    min-height    : 100vh;
+}
+
+.advice__card{
+    background-color: var(--neutral-dark-grayish-blue);
+    width: 400px;
+    height: 250px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.card__id{
+    color: var(--primary-neon-green); 
+    font-weight: 300;
+    font-size: 1.1rem;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin: 30px 0;
+}
+.card__advice{
+    margin: 0 20px;
+}
+.card__advice__text{
+    color: var(--primary-light-cyan);
+    font-size: 1.8rem;
+}
+.card__seperator{
+    margin-top: 25px;
+    position: relative;
+}
+
+.card__seperator img{
+    width: 300px;
+    position: fixed;
+    bottom: 38%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.card__btn{
+    position: absolute;
+    bottom: -10%; 
+    left: 50%;
+    transform: translateX(-50%);
+}
+.card__btn--btn{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 0;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: var(--primary-neon-green);
+}
+.card__btn--btn:active{
+    box-shadow: 0px 0px 33px 3px #52FFA8;    
+}  
